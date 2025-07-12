@@ -1,89 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IRPT - Empowering Students & Startups</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-black text-white p-4 flex justify-between items-center shadow-md">
-      <h1 class="text-2xl font-bold">ir-pt</h1>
-      <nav class="space-x-4">
-        <a href="#home" class="hover:text-blue-400">Home</a>
-        <a href="#about" class="hover:text-blue-400">About</a>
-        <a href="#services" class="hover:text-blue-400">Services</a>
-        <a href="#projects" class="hover:text-blue-400">Projects</a>
-        <a href="#contact" class="hover:text-blue-400">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRPT - Empowering Students & Startups</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="stylek.css">
+</head>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gray-100 py-20 text-center">
-      <h2 class="text-4xl font-bold mb-4">Empowering Students & Startups</h2>
-      <p class="text-lg mb-6 max-w-2xl mx-auto">Your one-stop solution for Consultancy, Projects, Digital Services & More!</p>
-      <div class="space-x-4">
-        <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get Free Counseling</button>
-        <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Explore Services</button>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">ir-pt</h1>
+    <nav class="space-x-4">
+      <a href="#home" class="hover:text-blue-400">Home</a>
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#services" class="hover:text-blue-400">Services</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gray-100 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Empowering Students & Startups</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">Your one-stop solution for Consultancy, Projects, Digital Services & More!
+    </p>
+    <div class="space-x-4">
+      <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get Free Counseling</button>
+      <button class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900">Explore Services</button>
+    </div>
+  </section>
+<br>
+<br>
+<br>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 bg-white text-center">
+    <h2 class="text-3xl font-semibold mb-4">About IRPT</h2>
+    <p class="max-w-3xl mx-auto text-lg">IRPT stands for <strong>Innovation, Reach, Progress, Technology</strong>. We
+      guide students, support their academic & technical projects, and empower startups with digital and tech services.
+    </p>
+  </section>
+<br>
+  <!-- Services Section -->
+   <div class="text-center mb-6">
+  <input type="text" id="serviceSearch" placeholder="Search services..." class="border px-4 py-2 rounded w-64" />
+</div>
+
+  <section id="services" class="bg-gray-50 py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-10">Our Services</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-bold mb-2">🎓 Student Counseling</h3>
+        <p>College admission guidance based on student needs, interest & budget.</p>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 px-6 bg-white text-center">
-      <h2 class="text-3xl font-semibold mb-4">About IRPT</h2>
-      <p class="max-w-3xl mx-auto text-lg">IRPT stands for <strong>Innovation, Reach, Progress, Technology</strong>. We guide students, support their academic & technical projects, and empower startups with digital and tech services.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="bg-gray-50 py-16 px-6">
-      <h2 class="text-3xl font-semibold text-center mb-10">Our Services</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div class="bg-white p-6 shadow rounded-lg">
-          <h3 class="text-xl font-bold mb-2">🎓 Student Counseling</h3>
-          <p>College admission guidance based on student needs, interest & budget.</p>
-        </div>
-        <div class="bg-white p-6 shadow rounded-lg">
-          <h3 class="text-xl font-bold mb-2">💻 Project Support</h3>
-          <p>Minor & major academic projects with real-world web & software development.</p>
-        </div>
-        <div class="bg-white p-6 shadow rounded-lg">
-          <h3 class="text-xl font-bold mb-2">📈 Digital Marketing</h3>
-          <p>Social media growth, branding, content marketing, and strategy.</p>
-        </div>
-        <div class="bg-white p-6 shadow rounded-lg">
-          <h3 class="text-xl font-bold mb-2">🌐 Web/App Development</h3>
-          <p>Responsive websites, SEO-optimized apps and full-stack solutions.</p>
-        </div>
-        <div class="bg-white p-6 shadow rounded-lg">
-          <h3 class="text-xl font-bold mb-2">☁️ Cloud Hosting</h3>
-          <p>Hosting setup for websites, apps, and platforms with tech support.</p>
-        </div>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-bold mb-2">💻 Project Support</h3>
+        <p>Minor & major academic projects with real-world web & software development.</p>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 px-6 text-center bg-white">
-      <h2 class="text-3xl font-semibold mb-6">Our Projects</h2>
-      <p class="text-lg max-w-xl mx-auto">Coming Soon: Real project showcases, live websites, app demos, and student work portfolios.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-gray-900 text-white py-16 px-6">
-      <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
-      <div class="max-w-2xl mx-auto text-center space-y-2">
-        <p>📍 </p>
-        <p>📞</p>
-        <p>📧 [Add your email here]</p>
-        <p>📱 Instagram / Facebook / WhatsApp</p>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-bold mb-2">📈 Digital Marketing</h3>
+        <p>Social media growth, branding, content marketing, and strategy.</p>
       </div>
-    </section>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-bold mb-2">🌐 Web/App Development</h3>
+        <p>Responsive websites, SEO-optimized apps and full-stack solutions.</p>
+      </div>
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="text-xl font-bold mb-2">☁️ Cloud Hosting</h3>
+        <p>Hosting setup for websites, apps, and platforms with tech support.</p>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-4">
-      <p>&copy; 2025 IRPT | All Rights Reserved</p>
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 text-center bg-white">
+    <h2 class="text-3xl font-semibold mb-6">Our Projects</h2>
+    <p class="text-lg max-w-xl mx-auto">Coming Soon: Real project showcases, live websites, app demos, and student work
+      portfolios.</p>
+  </section>
+<br>
+<br>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-900 text-white py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
+    <div class="max-w-2xl mx-auto text-center space-y-2">
+      <p>📍 </p>
+      <p>📞</p>
+      <p>📧 [Add your email here]</p>
+      <p>📱 Instagram / Facebook / WhatsApp</p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <p>&copy; 2025 IRPT | All Rights Reserved</p>
+  </footer>
 
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
